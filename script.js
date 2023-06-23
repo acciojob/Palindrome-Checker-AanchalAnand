@@ -1,9 +1,11 @@
 // complete the given function
 
 function palindrome(str){
-  str=str.replaceAll(' ','');
-	let newstr=str.reverse();
-	if(str==newstr) return true;
+  lrt s=str.replaceAll(' ','');
+	let newstr=s.reverse();
+	for(let i=0;i<s.length;i++){
+	if(s[i]==newstr[i]) return true;
 	return false;
+	}
 }
 module.exports = palindrome
