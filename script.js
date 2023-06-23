@@ -2,6 +2,7 @@
 
 function palindrome(str){
  let s=str.replaceAll(' ','');
+	s=s.toLowerCase();
 	let newstr=s.reverse();
 	for(let i=0;i<s.length;i++){
 	if(s[i]!=newstr[i]) return false;
