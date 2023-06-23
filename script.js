@@ -1,11 +1,10 @@
 // complete the given function
 
 function palindrome(str){
- let s=str.replaceAll(' ','');
-	s=s.toLowerCase();
-	let newstr=s.reverse();
+let n=str.length-1;
+	str=str.toLowerCase();
 	for(let i=0;i<s.length;i++){
-	if(s[i]!=newstr[i]) return false;
+	if(str.charAt(i)!=str.charAt(n--)) return false;
 
 	}
 	return true;
